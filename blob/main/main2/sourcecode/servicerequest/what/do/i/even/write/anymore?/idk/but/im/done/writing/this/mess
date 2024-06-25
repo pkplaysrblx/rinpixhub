@@ -1,18 +1,7 @@
---[Rave Client
----]
-------/Loadstring\------
 local Library = loadstring(game:HttpGet("https://rentry.co/kavoui-draggable/raw"))()
 local Window = Library.CreateLib("rxpix Hub", "Serpent")
-------/Tabs\------
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("")
-local Tab2 = Window:NewTab("Other")
-local Section2 = Tab2:NewSection("")
-local Tab3 = Window:NewTab("Executors")
-local Section3 = Tab3:NewSection("These executors are in game btw")
-local Tab4 = Window:NewTab("Credits")
-local Section4 = Tab4:NewSection("Credits to pkplaysrblx (Rave Team), and externalbypassed")
-------/MainTab\------
 Section:NewButton("ESP", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
 end)
@@ -48,8 +37,9 @@ end)
 Section:NewButton("Infinite Yield", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-------/Other\------
-Section:NewButton("Piggy | Chapter 1", "", function()
+local Tab2 = Window:NewTab("Other")
+local Section2 = Tab2:NewSection("")
+Section2:NewButton("Piggy | Chapter 1", "", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/ECEcBdxy'))()
 end)
 Section2("Island Of Move", "", function()
@@ -94,7 +84,8 @@ local args = {
 game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
 end
 end)
-------/Executors\------
+local Tab3 = Window:NewTab("Executors")
+local Section3 = Tab3:NewSection("These executors are in game btw")
 Section3:NewButton("KRNL", "", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/M3HjLPU7"))()
 end)
@@ -110,8 +101,9 @@ end)
 Section3:NewButton("Trigon", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomUserRay/ExecuterSource/main/TrigonSource.lua"))()
 end)
-------/And Finally, Credits!\------
-Section3:NewButton("Yipeeeeeeeeeeeeee!!!!!!!!!!!!!!!!!!!!!!!!", "", function()
+local Tab4 = Window:NewTab("Credits")
+local Section4 = Tab4:NewSection("Credits to pkplaysrblx (Rave Team), and externalbypassed")
+Section4:NewButton("Yipeeeeeeeeeeeeee!!!!!!!!!!!!!!!!!!!!!!!!", "", function()
 local args = {
     [1] = "fuck off u pissing shut up dog kid fuck off l bozo kid get better wtf bitch asshole dickhead wanna fuck?",
     [2] = "All"
@@ -120,4 +112,5 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
 game:GetService("ReplicatedStorage").VineThud:FireServer()
+end)
 end)

@@ -1,0 +1,123 @@
+--[Rave Client
+---]
+------/Loadstring\------
+local Library = loadstring(game:HttpGet("https://rentry.co/kavoui-draggable/raw"))()
+local Window = Library.CreateLib("rxpix Hub", "Serpent")
+------/Tabs\------
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("")
+local Tab2 = Window:NewTab("Other")
+local Section2 = Tab2:NewSection("")
+local Tab3 = Window:NewTab("Executors")
+local Section3 = Tab3:NewSection("These executors are in game btw")
+local Tab4 = Window:NewTab("Credits")
+local Section4 = Tab4:NewSection("Credits to pkplaysrblx (Rave Team), and externalbypassed")
+------/MainTab\------
+Section:NewButton("ESP", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+end)
+Section:NewButton("Aimbot", "", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Yousuck780/troll-x/main/ahhhh"), true))()
+end)
+Section:NewButton("Infinite Jump", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+end)
+Section:NewButton("Hitbox","",function()
+_G.HeadSize = 50
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+v.Character.HumanoidRootPart.Material = "Wood"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+end)
+Section:NewButton("Infinite Yield Reborn", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/fuckusfm/infiniteyield-reborn/682a9677ee3f6c471e45e9381cbed93e621ad67c/source'))()
+end)
+Section:NewButton("Infinite Yield", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+------/Other\------
+Section:NewButton("Piggy | Chapter 1", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ECEcBdxy'))()
+end)
+Section2("Island Of Move", "", function()
+    local Codes = {"WorldAlive","DIY","SettingTheStage","StrikeAPose","GetMoving","VictoryLap","ThingsGoBoom","FXArtist","Boardwalk","ParticleWizard","Glimmer"}
+for i = 1,#Codes do
+    game:GetService("ReplicatedStorage").Events.RedeemCode:FireServer(Codes[i])
+end
+end)
+
+Section2:NewButton("Galactic Speedway Creator Challenge", "", function()
+    local Codes = {"Lesson1","Lesson2","Lesson3","Lesson4","Lesson5","Lesson6"}
+for i = 1,#Codes do
+    game:GetService("ReplicatedStorage").Events.FinishQuiz:InvokeServer(Codes[i])
+end
+end)
+
+Section2:NewButton("Godzilla Creator Challenge", "", function()
+    local Codes = {"Lesson1","Lesson2","Lesson3"}
+for i = 1,#Codes do
+    game:GetService("ReplicatedStorage").Events.FinishQuiz:InvokeServer(Codes[i])
+end
+end)
+
+Section2:NewButton("PC Creator Challenge", "", function()
+    local Codes = {"Lesson1","Lesson2","Lesson3"}
+for i = 1,#Codes do
+    game:GetService("ReplicatedStorage").Events.FinishQuiz:InvokeServer(Codes[i])
+end
+end)
+
+Section2:NewButton("Concave World", "", function()
+    for i = 1, 150 do
+local args = {
+    [1] = 2,
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 11
+    }
+}
+
+game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+end
+end)
+------/Executors\------
+Section3:NewButton("KRNL", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/M3HjLPU7"))()
+end)
+
+Section3:NewButton("Synapse X", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+end)
+
+Section3:NewButton("Arceus X", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+end)
+
+Section3:NewButton("Trigon", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomUserRay/ExecuterSource/main/TrigonSource.lua"))()
+end)
+------/And Finally, Credits!\------
+Section3:NewButton("Yipeeeeeeeeeeeeee!!!!!!!!!!!!!!!!!!!!!!!!", "", function()
+local args = {
+    [1] = "fuck off u pissing shut up dog kid fuck off l bozo kid get better wtf bitch asshole dickhead wanna fuck?",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+game:GetService("ReplicatedStorage").VineThud:FireServer()
+end)

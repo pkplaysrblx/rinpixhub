@@ -103,14 +103,4 @@ Section3:NewButton("Trigon", "", function()
 end)
 local Tab4 = Window:NewTab("Credits")
 local Section4 = Tab4:NewSection("Credits to pkplaysrblx (Rave Team), and externalbypassed")
-Section4:NewButton("Yipeeeeeeeeeeeeee!!!!!!!!!!!!!!!!!!!!!!!!", "", function()
-local args = {
-    [1] = "fuck off u pissing shut up dog kid fuck off l bozo kid get better wtf bitch asshole dickhead wanna fuck?",
-    [2] = "All"
-}
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-game:GetService("ReplicatedStorage").VineThud:FireServer()
-end)
-end)
